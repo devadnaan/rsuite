@@ -23,7 +23,7 @@
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
     "bump-docs": "node scripts/bumpDocsVersion.js",
     "dist:analyze": "ANALYZE=true webpack --mode production --progress",
-    "dev": "npm i && npm i --prefix docs  && npm run dev --prefix docs",
+    "dev": "npm i",
     "lint": "npm run lint:ts && npm run lint:js && npm run lint:style",
     "lint:style": "stylelint src/**/*.less --cache",
     "lint:ts": "eslint --ext tsx --ext ts src --cache && tsc --noEmit",
