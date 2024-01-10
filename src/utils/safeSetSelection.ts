@@ -6,7 +6,7 @@ const strNone = 'none';
 function safeSetSelection(element: HTMLInputElement, selectionStart: number, selectionEnd: number) {
   if (document.activeElement === element) {
     if (isAndroid()) {
-      defer(() => element.setSelectionRange(selectionStart, selectionEnd, strNone), 0);
+      defer(() => element.setSelectionRange(selectionStart, selectionEnd, strNone));
     } else {
       element.setSelectionRange(selectionStart, selectionEnd, strNone);
     }

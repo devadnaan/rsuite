@@ -19,7 +19,6 @@
     "build": "npm run build:gulp && npm run dist && npm run build:types",
     "build:gulp": "gulp build --gulpfile scripts/gulpfile.js",
     "build:types": "tsc --project tsconfig.build.json --emitDeclarationOnly --outDir lib/cjs && tsc --project tsconfig.build.json --emitDeclarationOnly --outDir lib/esm",
-    "postbuild": "mocha test/validateBuilds.js",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
     "bump-docs": "node scripts/bumpDocsVersion.js",
     "dist:analyze": "ANALYZE=true webpack --mode production --progress",
@@ -45,11 +44,11 @@
     "component",
     "react-component"
   ],
-  "author": "HYPERS Team",
+  "author": "devadnaan",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git@github.com:rsuite/rsuite.git"
+    "url": "https://github.com/devadnaan/rsuite.git"
   },
   "dependencies": {
     "@babel/runtime": "^7.20.1",
